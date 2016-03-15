@@ -1,0 +1,32 @@
+name:                i2pd-console
+version:             0.1.0.0
+synopsis:            i2pd router console
+homepage:            https://github.com/edwtjo/i2pd-console
+license:             MIT
+license-file:        LICENSE
+author:              Edward Tjörnhammar
+maintainer:          ed@cflags.cc
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable i2pd-console
+  main-is:             i2pd-console.hs
+  ghc-options:         -threaded
+  default-language:    Haskell2010
+  build-depends:       base >=4.8 && <4.9
+                     , aeson
+                     , bytestring
+                     , brick
+                     , containers
+                     , connection
+                     , data-default
+                     , lens
+                     , http-client
+                     , http-client-tls
+                     , wreq
+                     --, servant-server
+                     , vty
+                     , vector
+                     , text
+                     , time
